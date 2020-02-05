@@ -136,7 +136,7 @@ h1{
 
 a{
 	transition: 300ms;
-    padding:3px;
+    padding:10px;
 	color: white;
 	text-decoration: none;
 	
@@ -145,7 +145,7 @@ a{
 a:hover {
   transition: 300ms;
   cursor: pointer;
-  background-color: rgba(110, 59, 155, 0.5)
+  background-color: rgba(77, 77, 77, 0.5)
 
 }
 
