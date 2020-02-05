@@ -136,22 +136,23 @@ h1{
 
 a{
 	bottom: 10px;
-}
-
-h3{
-	bottom: 10px;
-	transition: 300ms;
-    padding:3px;
 	color: white;
-	text-decoration: none;
-	
+	transition: 300ms;
+        padding:3px;
 }
 
-h3:hover {
+a:hover {
   transition: 300ms;
   cursor: pointer;
   background-color: rgba(77, 77, 77, 0.5)
 
+}
+
+h3{
+	bottom: 10px;
+	color: white;
+	text-decoration: none;
+	
 }
 
 @keyframes noise {
