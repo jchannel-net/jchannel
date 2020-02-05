@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>lainism.pw</title>
+
+	<link href="css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="player"><embed autostart="true" height="0" loop="true" src="media/fellinluv.mp3" width="0"></embed>
+</div>
+
+  <div class="lines"></div>
+<div class="main">
+	<div class="noise"></div>
+	<div class="vhs" data-splitting>ASTHER</div>
+	<div class="time"><span id="time"></span></div>
+	<div class="counter">REC <label id="minutes">00</label>:<label id="seconds">00</label></div>
+</div>
+    <div id="center">
+      <h1><a href="https://www.youtube.com/watch?v=a1h-ukCrN0U">lainism.pw</a></h1>
+      
+      <a href="https://steamcommunity.com/id/uploadspeed/" target="_blank">steam</a> - <a href="https://twitter.com/litecoinluxury" target="_blank">twitter</a> - <a href="https://lainfiles.cloud" target="_blank">lainfiles</a>
+      </div>
+
+
+  <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
+
+    <script  src="js/vhs.js"></script>
+    
+    <script type='text/javascript'>
+var isCtrl = false;
+document.onkeyup=function(e)
+{
+    if(e.which == 17)
+    isCtrl=false;
+}
+document.onkeydown=function(e)
+{
+    if(e.which == 17)
+    isCtrl=true;
+    if((e.which == 85) || (e.which == 67) && (isCtrl == true))
+    {
+        return false;
+    }
+}
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+    return false;
+}
+function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+	
+</body>
+</html>
